@@ -24,7 +24,7 @@ return new class extends Migration
             $table->time('orario_arrivo');
             $table->string('codice_treno', 7);
             $table->integer('n_carrozze');
-            $table->boolean('in_orario')->dafault(false);
+            $table->boolean('in_orario')->dafault(false);in
             $table->time('tempo_ritardo')->nullable();
             $table->boolean('cancellato')->dafault(false);
             $table->timestamps();
