@@ -14,7 +14,7 @@ class TrainsController extends Controller
        $now =date('Y-m-d',strtotime(now()));
        $trains = Train::where('data_partenza', '>=', $now)->get();
 
-       
-        return view('welcome', compact($trains));
+
+        return view('welcome', compact('trains'));
     }
 }
